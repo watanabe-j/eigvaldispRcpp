@@ -1,0 +1,38 @@
+citHeader("To cite eigvaldispRcpp in publications use:")
+
+citEntry(entry = "Misc",
+    title   = "{eigvaldispRcpp}: {Rcpp} extension for {eigvaldisp}",
+    author  = personList(as.person("Junya Watanabe")),
+    year    = "2022",
+    url     = "https://github.com/watanabe-j/eigvaldispRcpp",
+    textVersion =
+    paste("Watanabe, J. (2022). eigvaldispRcpp: Rcpp extension for eigvaldisp",
+          "URL https://github.com/watanabe-j/eigvaldispRcpp.")
+)
+
+
+citEntry(entry = "Misc",
+    title   = "{eigvaldisp}: {R} package for statistics of eigenvalue dispersion",
+    author  = personList(as.person("Junya Watanabe")),
+    year    = "2021",
+    url     = "https://github.com/watanabe-j/eigvaldisp",
+    textVersion =
+    paste("Watanabe, J. (2021). eigvaldisp: R package for",
+          "statistics of eigenvalue dispersion.",
+          "URL https://github.com/watanabe-j/eigvaldisp.")
+)
+
+citEntry(entry = "Article",
+    title   = "Statistics of eigenvalue dispersion indices: quantifying the magnitude of phenotypic integration",
+    author  = personList(as.person("Junya Watanabe")),
+    year    = "2022",
+    journal = "Evolution",
+    volume  = "76",
+    pages   = "4--28",
+    doi     = "10.1111/evo.14382",
+    url     = "https://doi.org/10.1111/evo.14382",
+    textVersion =
+    paste("Watanabe, J. (2022). Statistics of eigenvalue dispersion indices:",
+          "quantirying the magnitude of phenotypic integration. Evolution,",
+          "76, 4-28. doi:10.1111/evo.14382.")
+)

@@ -1,0 +1,6 @@
+useDynLib(eigvaldispRcpp, .registration = TRUE)
+import(eigvaldisp)
+importFrom(Rcpp, evalCpp)
+importFrom(Rcpp, sourceCpp)
+importFrom(RcppParallel, RcppParallelLibs)
+exportPattern("^[[:alpha:]]+")

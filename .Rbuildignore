@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^eigvaldispRcpp\.Rproj$
+^LICENSE\.md$
+R/int/*
+src/int/*
