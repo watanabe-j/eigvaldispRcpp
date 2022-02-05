@@ -1,11 +1,60 @@
+## Documentation of the package
+#' eigvaldispRcpp: Rcpp Extension for 'eigvaldisp'
+#'
+#' This package extends the main package \code{eigvaldisp} with
+#' fast C++ functions via the \code{Rcpp} interface.
+#'
+#' The DESCRIPTION file:
+#' \packageDESCRIPTION{eigvaldispRcpp}
+#' \packageIndices{eigvaldispRcpp}
+#'
+#' @section Author/Maintainer:
+#' Junya Watanabe <jw2098@cam.ac.uk>
+#'
+#' @references
+#' Watanabe, J. (2021). eigvaldisp: R package for statistics of
+#'   eigenvalue dispersion. https://github.com/watanabe-j/eigvaldisp.
+#'
+#' Watanabe, J. (2022). Statistics of eigenvalue dispersion indices:
+#'  quantifying the magnitude of phenotypic integration. *Evolution*,
+#'  **76**, 4--28. doi:[10.1111/evo.14382](https://doi.org/10.1111/evo.14382).
+#'
+#' @seealso
+#' \code{\link[eigvaldisp:eigvaldisp-package]{eigvaldisp}}: The main package
+#'
+#' \code{\link[eigvaldisp]{Var.VRR}}, \code{\link[eigvaldisp]{AVar.VRR_pfc}}:
+#'   The C++ functions are internally used in these outer functions
+#'
+#' @examples
+#' ## Generate a (moderately) large population correlation matrix
+#' Rho <- GenCov(p = 50L, shape = "linearly_decreasing", evectors = "Givens")
+#'
+#' ## Arbitrary sample sizes
+#' Ns <- c(10, 20, 50)
+#'
+#' ## Calculate the variance of Vrel(Rho)
+#' ## When the argument cppfun is provided, Var.VRR() automatically calls
+#' ## eigvaldisp:::AVar.VRR_pfc():
+#' eigvaldisp::Var.VRR(Rho, Ns - 1, cppfun = "Cov_r2C") # Base Rcpp
+#' eigvaldisp::Var.VRR(Rho, Ns - 1, cppfun = "Cov_r2A") # RcppArmadillo + OpenMP
+#' eigvaldisp::Var.VRR(Rho, Ns - 1, cppfun = "Cov_r2E") # RcppEigen + OpenMP
+#' eigvaldisp::Var.VRR(Rho, Ns - 1, cppfun = "Cov_r2P") # RcppParallel
+#' ## These use four alternative functions provided and yield identical results
+#' ## The last three parallelize the computation when possible
+#' ## Speed may vary, depending on environment
+#'
+#' @docType package
+#' @name eigvaldispRcpp-package
+#' @aliases eigvaldispRcpp
+#'
+#' @import eigvaldisp
+#'
 # ## Setting Rcpp-related import
-# ## usethis namespace: start
-# #' @useDynLib eigvaldisp, .registration = TRUE
-# #' @importFrom Rcpp sourceCpp
-# #' @exportPattern "^[[:alpha:]]+"
-# #' @importFrom RcppParallel RcppParallelLibs
-# ## usethis namespace: end
-# NULL
+#' @useDynLib eigvaldispRcpp, .registration = TRUE
+#' @importFrom Rcpp sourceCpp
+#' @exportPattern "^[[:alpha:]]+"
+#' @importFrom RcppParallel RcppParallelLibs
+NULL
 
 ## Documentation of C++ functions
 ##
