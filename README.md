@@ -6,12 +6,13 @@ This package extends the R package
 fast C++ functions using `Rcpp`-related packages.
 This is to speed-up evaluation of the approximate variance of
 the relative eigenvalue variance of correlation matrices with
-`eigvaldisp::Var.VRR()`, which takes lots of time in R.
+`eigvaldisp::Var.VRR()`, which takes prohibitively long time in R, even
+with vectorization and parallelization (see `eigvaldisp:::AVar.VRR_pfd()`).
 
 This extension is provided as a separate package to minimize the dependency
 of `eigvaldisp`. Practically, one would not need this extension unless
-interested in using `eigvaldisp::Var.VRR()` with large correlation matrices
-(p > 100 or so).
+interested in applying `eigvaldisp::Var.VRR()` to large correlation
+matrices (p > 100 or so).
 
 
 ## Installation
@@ -23,8 +24,8 @@ devtools::install_github("watanabe-j/eigvaldispRcpp")
 This package has the following dependencies:
 ```
 Depends: eigvaldisp
-Imports: Rcpp (>= 1.0.8), RcppParallel (>= 5.1.5)
-LinkingTo: Rcpp, RcppArmadillo, RcppEigen, RcppParallel (>= 5.1.5)
+Imports: Rcpp, RcppParallel
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, RcppParallel
 Suggests: testthat (>= 3.0.0)
 SystemRequirements: GNU make
 ```
