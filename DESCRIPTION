@@ -4,8 +4,6 @@ Title: Rcpp Extension for 'eigvaldisp'
 Version: 0.0.0.9010
 Authors@R: c(person("Junya", "Watanabe", email = "jw2098@cam.ac.uk",
             role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9810-5286")))
-Author: Junya Watanabe [aut, cre]
-Maintainer: Junya Watanabe <jw2098@cam.ac.uk>
 Description: This package supplements the main package eigvaldisp with
     C++ function via Rcpp-related packages.
     This is to keep the dependency of the main package minimal.
