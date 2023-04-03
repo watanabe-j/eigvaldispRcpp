@@ -2,6 +2,7 @@ Package: eigvaldispRcpp
 Type: Package
 Title: Rcpp Extension for 'eigvaldisp'
 Version: 0.0.0.9010
+Date: 2023-04-03
 Authors@R: c(person("Junya", "Watanabe", email = "jw2098@cam.ac.uk",
             role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9810-5286")))
 Description: This package supplements the main package eigvaldisp with
@@ -20,5 +21,5 @@ Suggests: testthat (>= 3.0.0)
 SystemRequirements: GNU make
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Config/testthat/edition: 3
