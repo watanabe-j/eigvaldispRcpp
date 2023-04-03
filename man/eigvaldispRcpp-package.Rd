@@ -6,8 +6,8 @@
 \alias{eigvaldispRcpp}
 \title{eigvaldispRcpp: Rcpp Extension for 'eigvaldisp'}
 \description{
-This package extends the main package \code{eigvaldisp} with
-fast C++ functions via the \code{Rcpp} interface.
+This package extends the main package \pkg{eigvaldisp} with
+fast \proglang{C++} functions via the \pkg{Rcpp} interface
 }
 \details{
 The DESCRIPTION file:
@@ -39,16 +39,19 @@ eigvaldisp::Var.VRR(Rho, Ns - 1, cppfun = "Cov_r2P") # RcppParallel
 
 }
 \references{
-Watanabe, J. (2021). eigvaldisp: R package for statistics of
-eigenvalue dispersion. https://github.com/watanabe-j/eigvaldisp.
+Watanabe, J. (2021) eigvaldisp: R package for statistics of
+eigenvalue dispersion.
+\url{https://github.com/watanabe-j/eigvaldisp}.
 
-Watanabe, J. (2022). Statistics of eigenvalue dispersion indices:
+Watanabe, J. (2022) Statistics of eigenvalue dispersion indices:
 quantifying the magnitude of phenotypic integration. \emph{Evolution},
-\strong{76}, 4--28. doi:\href{https://doi.org/10.1111/evo.14382}{10.1111/evo.14382}.
+\strong{76}, 4--28. \doi{10.1111/evo.14382}.
 }
 \seealso{
 \code{\link[eigvaldisp:eigvaldisp-package]{eigvaldisp}}: The main package
 
+\code{\link[Cov_r2]}: The \proglang{C++} functions
+
 \code{\link[eigvaldisp]{Var.VRR}}, \code{\link[eigvaldisp]{AVar.VRR_pfc}}:
-The C++ functions are internally used in these outer functions
+Outer functions in which the \proglang{C++} functions are internally used
 }

@@ -1,16 +1,18 @@
 Package: eigvaldispRcpp
 Type: Package
 Title: Rcpp Extension for 'eigvaldisp'
-Version: 0.0.0.9010
+Version: 0.0.0.9011
 Date: 2023-04-03
 Authors@R: c(person("Junya", "Watanabe", email = "jw2098@cam.ac.uk",
-            role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9810-5286")))
-Description: This package supplements the main package eigvaldisp with
-    C++ function via Rcpp-related packages.
+             role = c("aut", "cre", "cph"),
+             comment = c(ORCID = "0000-0002-9810-5286")))
+Description: Supplements the main package 'eigvaldisp' with
+    C++ function via 'Rcpp'-related packages.
     This is to keep the dependency of the main package minimal.
     At present, this package involves several C++ functions to be used in
     evaluation of approximate variance of the relative eigenvalue variance of
-    correlation matrices via Pan & Frank's approach, eigvaldisp:::AVar.VRR_pfc().
+    correlation matrices via Pan and Frank's approach,
+    eigvaldisp:::AVar.VRR_pfc().
 License: GPL (>= 3)
 URL: https://github.com/watanabe-j/eigvaldispRcpp
 BugReports: https://github.com/watanabe-j/eigvaldispRcpp/issues
