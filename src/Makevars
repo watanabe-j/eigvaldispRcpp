@@ -1,5 +1,7 @@
-## Required for RcppParallel; recommended from RcppArmadillo and RcppEigen
-CXX_STD = CXX11
+## No longer necessary
+# CXX_STD = CXX11
+
+## For RcppParallel
 PKG_LIBS += $(shell ${R_HOME}/bin/Rscript -e "RcppParallel::RcppParallelLibs()")
 
 ## For OpenMP
