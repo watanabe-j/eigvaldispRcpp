@@ -23,7 +23,7 @@
 #' @seealso
 #' \code{\link[eigvaldisp:eigvaldisp-package]{eigvaldisp}}: The main package
 #'
-#' \code{\link[Cov_r2]}: The \proglang{C++} functions
+#' \code{\link{Cov_r2}}: The \proglang{C++} functions
 #'
 #' \code{\link[eigvaldisp]{Var.VRR}}, \code{\link[eigvaldisp]{AVar.VRR_pfc}}:
 #'   Outer functions in which the \proglang{C++} functions are internally used
