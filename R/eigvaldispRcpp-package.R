@@ -9,7 +9,7 @@
 #' \packageIndices{eigvaldispRcpp}
 #'
 #' @section Author/Maintainer:
-#' Junya Watanabe <jw2098@cam.ac.uk>
+#' Junya Watanabe <Junya.Watanabe@uab.cat>
 #'
 #' @references
 #' Watanabe, J. (2021) eigvaldisp: R package for statistics of
